@@ -21,7 +21,7 @@
 5. Now find the path the Python executable with the following command:
     ```powershell
     > pipenv --py
-    C:\Users\Serzhan\.virtualenvs\test_vs_code_python-KdIZ1Tg8\Scripts\python.exe
+    C:\Users\Serzhan\.virtualenvs\vscode-python-starter-KdIZ1Tg8\Scripts\python.exe
     ```
 6. Insert this value in your `./.vscode/settings.json` `python.pythonPath` variable:
 
@@ -33,14 +33,15 @@
 well set linting options too. Django code style uses 119 as line-length:
     ```json
     {
-        "python.pythonPath": "C:\\Users\\Serzhan\\.virtualenvs\\test_vs_code_python-KdIZ1Tg8\\Scripts\\python.exe",
+        "python.pythonPath": "C:\\Users\\Serzhan\\.virtualenvs\\vscode-python-starter-KdIZ1Tg8\\Scripts\\python.exe",
         "code-runner.executorMap": {
-            "python": "C:\\Users\\Serzhan\\.virtualenvs\\test_vs_code_python-KdIZ1Tg8\\Scripts\\python.exe"
+            "python": "C:\\Users\\Serzhan\\.virtualenvs\\vscode-python-starter-KdIZ1Tg8\\Scripts\\python.exe"
         },
         "python.linting.enabled": true,
         "python.formatting.provider": "black",
         "python.formatting.blackArgs": ["--line-length", "119"],
-        "python.linting.flake8Enabled": true
+        "python.linting.flake8Enabled": true,
+        "python.linting.pylintEnabled": false
     }
     ``` 
 
