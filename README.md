@@ -44,6 +44,12 @@ well set linting options too. Django code style uses 119 as line-length:
         "python.linting.pylintEnabled": false
     }
     ``` 
+9. Include a `setup.cfg` file with flake8 settings:
+    ```ini
+    [flake8]
+    exclude = .git,*migrations*
+    max-line-length = 119
+    ```
 
 ## Troubleshooting:
 
